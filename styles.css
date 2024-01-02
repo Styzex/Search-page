@@ -1,0 +1,123 @@
+@font-face {
+	font-family: "NerdFont";
+	src: url("fonts/JetBrainsMonoNerdFont-Medium.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NerdFont";
+	src: url("fonts/JetBrainsMonoNerdFont-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NerdFont";
+	src: url("fonts/JetBrainsMonoNerdFont-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "NerdFont";
+	src: url("fonts/JetBrainsMonoNerdFont-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+button {
+    font-family: "NerdFont";
+    background-color: #76946A;
+    border: 15px;
+    border-radius: 7px;
+    box-shadow: 0 10px #647c5b;
+    padding: 10px;
+    resize: both;
+    font-size: 25px;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #647c5b;
+    color:white;
+    margin-left: 20px;
+}
+
+.space {
+	display: flex;
+	height: 30vh;
+}
+
+.space2 {
+	display: flex;
+	height: 31vh;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0vh;
+
+	font-family: 'NerdFont', monospace;
+	color: #fff;
+	transition: 0.4s;
+	font-size: 35px;
+}
+
+.header:hover {
+	color: #C0A36E;
+	font-size: 45px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+}
+
+.search_bar_item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 34px;
+	border: none;
+	font-family: 'NerdFont', monospace;
+	transition: 0.3s ease-in-out;
+
+	box-shadow: 0 10px #647c5b;
+}
+
+.search_bar {
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 5px 0px 0px 5px;
+	outline: none;
+
+	background-color: #76946A;
+}
+
+.search_bar:hover {
+	color: #fff;
+}
+
+.search_button {
+	border-radius: 0px 5px 5px 0px;
+	padding-left: 32px;
+	padding-right: 42px;
+	margin-left: -4px;
+
+	background-color: #76946A;
+	color: #374431;
+}
+
+.search_button:hover {
+	color: #fff;
+}
