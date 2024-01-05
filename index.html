@@ -7,8 +7,17 @@
 		<meta name="description" content="Let's search something....">
 	</head>
 
+	
+
 	<body bgcolor="#1F1F28">
+
+		<a class="code" href="https://github.com/Styzex/Search-page">
+			<button>Website code</button>
+		</a>
+
 		<a class="space"></a>
+		<h1 class="time" id="time"></h1>
+		<a class="space2"></a>
 		<p class="header">Viktoreeej Search</p>
 		<div class="container">
 			<form action="https://duckduckgo.com/">
@@ -16,9 +25,16 @@
 				<input class="search_bar_item search_button" type="submit" value="">
 			</form>
 		</div>
-		<a class="space2"></a>
-		<a href="https://github.com/Styzex/Search-page">
-			<button>Website code</button>
-		</a>
+
+		<script>
+			let time = document.getElementById("time");
+
+			setInterval(()=>{
+				let d = new Date();
+				time.innerHTML = d.toLocaleTimeString();
+			},1000)
+			let d = new Date();
+			time.innerHTML = d.toLocaleTimeString();
+		</script>
 	</body>
 </html>
